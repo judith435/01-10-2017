@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>map</title>
+    </head>
+    <body>
+        <!-- <iframe src="https://www.bbc.com"></iframe> -->
+        <script>
+            alert ("power 2 , 7 = " + power (2 , 7) );
+            function power (x , pow) {
+                let temp = x;
+                for(let i = 2; i <= pow; i++) {
+                   temp = temp * x;     
+                }
+                return temp;
+            }
+
+            alert ("power_recursive 2 , 7 = " + power (2 , 7) );
+            function power_recursive (x , pow) {
+                return x * power_recursive (x , pow - 1);
+            }
+
+        </script> 
+    </body>
+</html>
